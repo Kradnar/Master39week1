@@ -1,20 +1,19 @@
-let favsongs = [
-    "Aerosmith - Dream On",
-    "Alice Cooper - Poison",
-    "The Eagles - Hotel California"
+// Activity 1
+// Create an array that lists your favourite films, up to five elements
+// Add 2 more using a method
+// Use a loop to cycle through the array
+
+let films = [
+    "Star Wars",
+    "Harry Potter",
+    "Avatar",
+    "Tron",
+    "Blade Runner"
 ]
-console.log(favsongs);
+films.splice(2, 0, "Alien", "Predator")
 
-
-//---Map
-
-//---Shift
-
-//---Unshift
-
-//---Splice (1st parameter is index, 2nd is how many items to replace)----
-favsongs.splice(2, 0, "Meatloaf - Bat out of hell", "OMD - Enola Gay") 
-console.log(favsongs)
-
-//---UnSplice
-//  not a method
+let i = 0
+while(i < films.length){
+    console.log(films[i])
+    i++
+}
